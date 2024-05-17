@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  mode: "development", // Dodaj tę linię
+  mode: "development",
   entry: "./src/index.js",
   output: {
     filename: "bundle.js",
@@ -22,6 +22,10 @@ module.exports = {
             presets: ["@babel/preset-env"],
           },
         },
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
       },
     ],
   },
