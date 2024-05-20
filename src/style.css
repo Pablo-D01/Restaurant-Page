@@ -1,28 +1,124 @@
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  background-image: url(./assets/background.webp);
+}
+
+.home {
+  text-align: center;
+  color: #fff;
+}
+
+.home h1 {
+  font-size: 7rem;
+  margin: 0;
+}
+
+.home .highlight {
+  color: orange;
+}
+
+.home p {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.pizza-container {
+  position: relative;
+  z-index: 0;
+}
+
+.pizza-image {
+  width: 1000px;
+  height: auto;
+  margin-top: 2rem;
+  animation: slideIn 2s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #ff8000;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(100vw - 4rem); /* Ustaw szerokość z marginesami */
+  max-width: 90%; /* Maksymalna szerokość sekcji */
+  margin: -500px auto 0; /* Nachodzenie na obrazek pizzy i wyśrodkowanie */
+  z-index: 1;
+  position: relative;
+  color: #fff;
+}
+
+.item {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 2rem; /* Zwiększono padding dla lepszej przestrzeni wewnętrznej */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item .icon {
+  font-size: 4rem; /* Zwiększono rozmiar czcionki ikon */
+  margin-bottom: 1.5rem; /* Zwiększono odstęp między ikoną a tytułem */
+}
+
+.item h3 {
+  font-size: 2.5rem; /* Zwiększono rozmiar czcionki tytułów */
+  margin: 0.5rem 0;
+}
+
+.item p {
+  font-size: 1.5rem; /* Zwiększono rozmiar czcionki paragrafów */
+  line-height: 1.6; /* Zwiększono odstępy między liniami tekstu */
+  color: #f8f8f8;
+}
+
+.highlight {
+  color: orange;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
-  background-color: #333;
   padding: 1rem;
+  margin-bottom: 4rem;
 }
 
 nav button {
-  background-color: #fff;
+  background-color: #ff562200;
+  color: #ffffff;
+  padding: 10px 20px;
   border: none;
-  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
+  transition: color 0.7s ease;
 }
 
 nav button:hover {
-  background-color: #ddd;
+  color: #fd9d3e;
 }
 
 .home,
 .menu,
 .contact {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
