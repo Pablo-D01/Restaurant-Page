@@ -2,7 +2,6 @@ import "./style.css";
 import createHome from "./home";
 import createMenu from "./menu";
 import createContact from "./contact";
-import pizzaImage from "./assets/pizzza.png"; // Dodaj ten import
 
 function loadPage(page) {
   const content = document.getElementById("content");
@@ -35,7 +34,7 @@ function createNav() {
   menuButton.addEventListener("click", () => loadPage("menu"));
 
   const contactButton = document.createElement("button");
-  contactButton.textContent = "Contact";
+  contactButton.textContent = "Order";
   contactButton.addEventListener("click", () => loadPage("contact"));
 
   nav.appendChild(homeButton);

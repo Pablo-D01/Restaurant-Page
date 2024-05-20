@@ -122,3 +122,37 @@ nav button:hover {
   text-align: center;
   margin-top: 3rem;
 }
+
+.pdf-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: calc(100vh - 100px);
+  width: 100%;
+}
+
+.pdf-iframe {
+  width: 90%;
+  height: 90vh;
+  border: none;
+}
+
+.menu-header {
+  font-size: 4rem;
+  color: orange;
+}
+
+.contact-header {
+  font-size: 3rem;
+  color: orange;
+  margin: 20px 0;
+}
+
+.contact-info {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 1.5rem;
+}
