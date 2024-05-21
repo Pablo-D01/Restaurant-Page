@@ -20,6 +20,7 @@ function loadPage(page) {
     default:
       content.appendChild(createHome());
   }
+  addTiltEffect();
 }
 
 function createNav() {
@@ -44,5 +45,25 @@ function createNav() {
   document.body.insertBefore(nav, document.getElementById("content"));
 }
 
+function addTiltEffect() {
+  const section = document.querySelector(".pizza-image");
+
+  if (section) {
+    section.addEventListener("mousemove", (event) => {
+      const { offsetWidth: width, offsetHeight: height } = section;
+      const { offsetX: x, offsetY: y } = event;
+      const moveX = (x / width) * 30 - 15;
+      const moveY = (y / height) * 30 - 15;
+
+      section.style.transform = `rotateX(${moveY}deg) rotateY(${moveX}deg)`;
+    });
+
+    section.addEventListener("mouseleave", () => {
+      section.style.transform = "rotateX(0) rotateY(0)";
+    });
+  }
+}
+
 createNav();
 loadPage("home");
+addTiltEffect();

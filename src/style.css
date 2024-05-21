@@ -51,40 +51,46 @@ body {
 .section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1rem;
   padding: 2rem;
-  background-color: #ff8000;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: calc(100vw - 4rem); /* Ustaw szerokość z marginesami */
-  max-width: 90%; /* Maksymalna szerokość sekcji */
-  margin: -500px auto 0; /* Nachodzenie na obrazek pizzy i wyśrodkowanie */
+  width: calc(100vw - 4rem);
+  max-width: 90%;
+  margin: -500px auto 0;
   z-index: 1;
   position: relative;
   color: #fff;
+  transition: transform 0.1s ease;
 }
 
 .item {
+  position: relative;
   text-align: center;
-  background: rgba(255, 255, 255, 0.1);
+  border: 2rem solid;
+  background-color: #ff8000a3;
+  border-color: #ff8000;
   border-radius: 10px;
-  padding: 2rem; /* Zwiększono padding dla lepszej przestrzeni wewnętrznej */
+  padding: 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  overflow: hidden;
+  color: #fff;
 }
 
 .item .icon {
-  font-size: 4rem; /* Zwiększono rozmiar czcionki ikon */
-  margin-bottom: 1.5rem; /* Zwiększono odstęp między ikoną a tytułem */
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
 }
 
 .item h3 {
-  font-size: 2.5rem; /* Zwiększono rozmiar czcionki tytułów */
+  font-size: 2.5rem;
   margin: 0.5rem 0;
 }
 
 .item p {
-  font-size: 1.5rem; /* Zwiększono rozmiar czcionki paragrafów */
-  line-height: 1.6; /* Zwiększono odstępy między liniami tekstu */
+  font-size: 1.5rem;
+  line-height: 1.6;
   color: #f8f8f8;
 }
 
