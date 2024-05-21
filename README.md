@@ -1,26 +1,52 @@
 # Restaurant Page
 
-This is a simple restaurant page built with HTML, CSS, and JavaScript. The project is part of The Odin Project curriculum.
+This project was mainly created to practice using Webpack. It is a simple restaurant website containing three main sections: Home, Menu, and Contact. The project was developed as part of The Odin Project course.
 
-## Features
+## Contents
 
-- Home section with a welcome message and icons.
-- Menu section displaying a PDF menu.
-- Contact section with contact information.
+- **Home**: A welcome section with a brief description and icons.
+- **Menu**: A section displaying a PDF menu.
+- **Contact**: A section with contact information.
 
-## Technologies Used
+## Technologies
 
-- HTML
-- CSS
-- JavaScript
-- Webpack
-- pdfjs-dist
+- **HTML**: Structure of the website.
+- **CSS**: Styling of the website, including visual effects.
+- **JavaScript**: Dynamics of the website and user interaction handling.
+- **Webpack**: Bundling and optimizing resources.
 
-## Getting Started
+## Installation and Running
 
-To run this project locally, follow these steps:
+To run the project locally, follow these steps:
 
-1. Clone this repository.
-2. Install the dependencies with `npm install`.
-3. Start the development server with `npm start`.
+1. Clone this repository:
 
+   ```sh
+   git clone https://github.com/Pablo-D01/Restaurant-Page.git
+   cd Restaurant-Page
+   ```
+
+2. Install the dependencies:
+
+   ```sh
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```sh
+   npm start
+   ```
+
+4. To build the project:
+   ```sh
+   npm run build
+   ```
+
+## Deployment
+
+The project is deployed using GitHub Pages. The latest version is available at: [https://pablo-d01.github.io/Restaurant-Page](https://pablo-d01.github.io/Restaurant-Page)
+
+## Author
+
+- **Pablo-D01** - [GitHub](https://github.com/Pablo-D01)
